@@ -1,15 +1,13 @@
-# 关于
+# 关于我
 
 你好，我是 **KALXR**。
 
-<p class="about-lead">一些我认为正确的话</p>
+## 为什么创建本站？
+最重要的原因是现在维护一个网站消耗的精力在我接受范围内，这要归功于 Vibe Coding，还有 CC98 的经验贴。感谢 Vibe Coding，感谢 CC98！另一个主观因素是为了分享日常生活和人生思考，总得来说我是一个比较矫情的人，需要一个地方写些似是而非的东西。（人年纪大了就喜欢回忆过去，就想给自己留些回忆）
+
+## 一些我认为正确的话
 
 <style>
-  .about-lead {
-    margin: 1.2rem 0 1rem;
-    opacity: 0.85;
-  }
-
   .about-quotes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -73,7 +71,7 @@
 
 <blockquote class="about-quote about-quote--classic">
   <p>差不多得了</p>
-  <cite></cite>
+  <cite>B站UP 橙海飞鸟</cite>
 </blockquote>
 
 </div>
