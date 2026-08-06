@@ -128,25 +128,25 @@ function initKalxrHome() {
   var blocks = {
     interests: {
       title: "爱好",
-      text: "课程、技能与感兴趣的方向，像参考站那样分门别类地记录。",
+      text: "这里记录我感兴趣的万事万物。",
       link: "interests/",
       color: "#e30512"
     },
     notes: {
       title: "随笔",
-      text: "随想、片段与日常记录，留给未来的自己。",
+      text: "一些随想、记录与碎片文字。",
       link: "notes/",
       color: "#facd01"
     },
     photos: {
-      title: "照片",
-      text: "生活与旅途中的影像，用相册慢慢整理。",
+      title: "Nikon记忆",
+      text: "生命中总有美好时刻值得记录。",
       link: "photos/",
       color: "#044ea2"
     },
     about: {
-      title: "关于",
-      text: "关于 KALXR 的简单介绍与联系方式。",
+      title: "关于我",
+      text: "你好，我是 KALXR。",
       link: "about/",
       color: "#ffffff"
     }

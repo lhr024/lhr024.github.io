@@ -295,7 +295,8 @@ body.kalxr-home .md-typeset h1 {
 
 .kalxr-card p {
   margin: 0 0 1.8rem;
-  line-height: 1.8;
+  font-size: 1.125rem;
+  line-height: 1.85;
   color: #333;
 }
 
