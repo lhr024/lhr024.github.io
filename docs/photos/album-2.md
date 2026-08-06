@@ -111,7 +111,7 @@
 
 <div class="photo-row photo-row--duo">
 
-<img src="../xianghu/xianghu1.jpg" alt="老虎洞">
-<img src="../xianghu/xianghu2.jpg" alt="孤独湘湖">
+<img src="../xianghu/xianghu1.JPG" alt="老虎洞">
+<img src="../xianghu/xianghu2.JPG" alt="孤独湘湖">
 
 </div>
