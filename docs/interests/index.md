@@ -5,3 +5,5 @@
 ## 列表
 
 - [板绘](drawing.md)
+- [乐理](music.md)
+- [游泳](swimming.md)
