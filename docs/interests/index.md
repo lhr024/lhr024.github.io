@@ -7,3 +7,4 @@
 - [板绘](drawing.md)
 - [乐理](music.md)
 - [游泳](swimming.md)
+- [Chili Chill乐团](chilichill.md)
