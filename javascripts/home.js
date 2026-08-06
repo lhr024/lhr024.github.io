@@ -1,0 +1,220 @@
+function initKalxrHome() {
+  if (document.body.dataset.kalxrHomeInit === "true") {
+    return;
+  }
+  document.body.dataset.kalxrHomeInit = "true";
+
+  var scrollHint = document.getElementById("kalxrScrollHint");
+  var modal = document.getElementById("kalxrModal");
+  var card = document.getElementById("kalxrCard");
+  var cardTitle = document.getElementById("kalxrCardTitle");
+  var cardText = document.getElementById("kalxrCardText");
+  var cardLink = document.getElementById("kalxrCardLink");
+  var cardClose = document.getElementById("kalxrCardClose");
+  var line1El = document.getElementById("kalxrLine1");
+  var line2El = document.getElementById("kalxrLine2");
+  var cursorEl = document.getElementById("kalxrCursor");
+
+  var subtitleLines = ["希望我的故事", "能带给你力量"];
+  var subtitleTimer;
+  var subtitlePhase = "line1";
+  var subtitleIndex = 0;
+
+  function popPart(el) {
+    if (!el) {
+      return;
+    }
+    el.classList.remove("is-pop");
+    void el.offsetWidth;
+    el.classList.add("is-pop");
+  }
+
+  function setCursorVisible(visible) {
+    if (cursorEl) {
+      cursorEl.classList.toggle("is-hidden", !visible);
+    }
+  }
+
+  function resetSubtitleLines() {
+    if (line1El) {
+      line1El.textContent = "";
+    }
+    if (line2El) {
+      line2El.textContent = "";
+    }
+    setCursorVisible(true);
+    subtitlePhase = "line1";
+    subtitleIndex = 0;
+  }
+
+  function subtitleLoop() {
+    window.clearTimeout(subtitleTimer);
+
+    if (!line1El || !line2El) {
+      return;
+    }
+
+    if (subtitlePhase === "line1") {
+      line1El.textContent = subtitleLines[0].slice(0, subtitleIndex + 1);
+      subtitleIndex += 1;
+
+      if (subtitleIndex === subtitleLines[0].length) {
+        popPart(line1El);
+        subtitlePhase = "line2";
+        subtitleIndex = 0;
+        subtitleTimer = window.setTimeout(subtitleLoop, 500);
+        return;
+      }
+
+      subtitleTimer = window.setTimeout(subtitleLoop, 90);
+      return;
+    }
+
+    if (subtitlePhase === "line2") {
+      line2El.textContent = subtitleLines[1].slice(0, subtitleIndex + 1);
+      subtitleIndex += 1;
+
+      if (subtitleIndex === subtitleLines[1].length) {
+        popPart(line2El);
+        subtitlePhase = "pause";
+        setCursorVisible(false);
+        subtitleTimer = window.setTimeout(subtitleLoop, 2200);
+        return;
+      }
+
+      subtitleTimer = window.setTimeout(subtitleLoop, 90);
+      return;
+    }
+
+    if (subtitlePhase === "pause") {
+      subtitlePhase = "delete2";
+      subtitleIndex = subtitleLines[1].length;
+      setCursorVisible(true);
+      subtitleTimer = window.setTimeout(subtitleLoop, 300);
+      return;
+    }
+
+    if (subtitlePhase === "delete2") {
+      line2El.textContent = subtitleLines[1].slice(0, subtitleIndex - 1);
+      subtitleIndex -= 1;
+
+      if (subtitleIndex === 0) {
+        subtitlePhase = "delete1";
+        subtitleIndex = subtitleLines[0].length;
+        subtitleTimer = window.setTimeout(subtitleLoop, 250);
+        return;
+      }
+
+      subtitleTimer = window.setTimeout(subtitleLoop, 45);
+      return;
+    }
+
+    if (subtitlePhase === "delete1") {
+      line1El.textContent = subtitleLines[0].slice(0, subtitleIndex - 1);
+      subtitleIndex -= 1;
+
+      if (subtitleIndex === 0) {
+        subtitlePhase = "line1";
+        subtitleIndex = 0;
+        subtitleTimer = window.setTimeout(subtitleLoop, 600);
+        return;
+      }
+
+      subtitleTimer = window.setTimeout(subtitleLoop, 45);
+      return;
+    }
+  }
+
+  var blocks = {
+    interests: {
+      title: "爱好",
+      text: "课程、技能与感兴趣的方向，像参考站那样分门别类地记录。",
+      link: "interests/",
+      color: "#e30512"
+    },
+    notes: {
+      title: "随笔",
+      text: "随想、片段与日常记录，留给未来的自己。",
+      link: "notes/",
+      color: "#facd01"
+    },
+    photos: {
+      title: "照片",
+      text: "生活与旅途中的影像，用相册慢慢整理。",
+      link: "photos/",
+      color: "#044ea2"
+    },
+    about: {
+      title: "关于",
+      text: "关于 KALXR 的简单介绍与联系方式。",
+      link: "about/",
+      color: "#ffffff"
+    }
+  };
+
+  function openBlock(key) {
+    var data = blocks[key];
+    if (!data || !modal || !card) {
+      return;
+    }
+
+    cardTitle.textContent = data.title;
+    cardText.textContent = data.text;
+    cardLink.href = data.link;
+    card.style.background = data.color;
+    cardTitle.style.color = key === "notes" || key === "about" ? "#111" : "#fff";
+    cardText.style.color = key === "notes" || key === "about" ? "#333" : "rgba(255,255,255,0.92)";
+    cardLink.style.color = key === "notes" || key === "about" ? "#111" : "#fff";
+    cardLink.style.borderColor = key === "notes" || key === "about" ? "#111" : "#fff";
+    cardClose.style.color = key === "notes" || key === "about" ? "#111" : "#fff";
+    modal.classList.add("active");
+  }
+
+  function closeModal() {
+    if (modal) {
+      modal.classList.remove("active");
+    }
+  }
+
+  document.querySelectorAll("[data-kalxr-block]").forEach(function (block) {
+    block.addEventListener("click", function () {
+      openBlock(block.getAttribute("data-kalxr-block"));
+    });
+  });
+
+  document.querySelectorAll("[data-kalxr-link]").forEach(function (block) {
+    block.addEventListener("click", function () {
+      window.location.href = block.getAttribute("data-kalxr-link");
+    });
+  });
+
+  if (scrollHint) {
+    scrollHint.addEventListener("click", function () {
+      var target = document.getElementById("kalxrMondrian");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  }
+
+  if (cardClose) {
+    cardClose.addEventListener("click", closeModal);
+  }
+
+  if (modal) {
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  });
+
+  resetSubtitleLines();
+  subtitleLoop();
+}
