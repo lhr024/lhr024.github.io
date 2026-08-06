@@ -5,3 +5,4 @@
 ## 相册列表
 
 - [Moon 2026.07](album-1.md)
+- [Xianghu Lake 2026.07](album-2.md)
