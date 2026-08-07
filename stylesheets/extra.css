@@ -17,9 +17,123 @@ label[for="__search"] {
   display: none !important;
 }
 
-/* 已有顶部标签导航，隐藏左侧重复导航栏 */
-.md-sidebar--primary {
-  display: none !important;
+/* 桌面端已有顶部标签导航，隐藏左侧重复导航栏 */
+@media screen and (min-width: 1220px) {
+  .md-sidebar--primary {
+    display: none !important;
+  }
+}
+
+/* 手机/平板：显示可横向滑动的顶栏标签（Material 默认会隐藏 tabs） */
+@media screen and (max-width: 1219px) {
+  .md-sidebar--primary {
+    display: none !important;
+  }
+
+  body:not(.kalxr-home) .md-header::after {
+    display: none;
+  }
+
+  body:not(.kalxr-home) .md-tabs {
+    display: block !important;
+    box-shadow: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  body:not(.kalxr-home) .md-tabs__list {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+  }
+
+  body:not(.kalxr-home) .md-tabs__item {
+    min-width: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  body:not(.kalxr-home) .md-tabs__item:last-child {
+    border-right: none;
+  }
+
+  body:not(.kalxr-home) .md-tabs__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0.55rem 0.15rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: center;
+    min-height: 2.35rem;
+    opacity: 0.72;
+    border-top: 3px solid transparent;
+    transition: opacity 0.2s ease, background 0.2s ease;
+  }
+
+  body:not(.kalxr-home) .md-tabs__item:nth-child(1) .md-tabs__link {
+    border-top-color: var(--kalxr-red);
+  }
+
+  body:not(.kalxr-home) .md-tabs__item:nth-child(2) .md-tabs__link {
+    border-top-color: var(--kalxr-yellow);
+  }
+
+  body:not(.kalxr-home) .md-tabs__item:nth-child(3) .md-tabs__link {
+    border-top-color: var(--kalxr-blue);
+  }
+
+  body:not(.kalxr-home) .md-tabs__item:nth-child(4) .md-tabs__link {
+    border-top-color: #111;
+  }
+
+  body:not(.kalxr-home) .md-tabs__item:nth-child(5) .md-tabs__link {
+    border-top-color: var(--kalxr-red);
+  }
+
+  body:not(.kalxr-home) .md-tabs__link--active {
+    opacity: 1;
+    font-weight: 700;
+    background: rgba(4, 78, 162, 0.07);
+  }
+
+  body[data-md-color-scheme="slate"]:not(.kalxr-home) .md-tabs {
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+
+  body[data-md-color-scheme="slate"]:not(.kalxr-home) .md-tabs__item {
+    border-right-color: rgba(255, 255, 255, 0.06);
+  }
+
+  body[data-md-color-scheme="slate"]:not(.kalxr-home) .md-tabs__link--active {
+    background: rgba(110, 180, 255, 0.1);
+  }
+
+  /* 侧栏已隐藏，汉堡菜单无内容，一并隐藏 */
+  body:not(.kalxr-home) .md-header__button[for="__drawer"] {
+    display: none;
+  }
+
+  body:not(.kalxr-home) .md-header__title {
+    margin-left: 0.4rem;
+  }
+
+  body:not(.kalxr-home) .md-content {
+    padding-bottom: 2rem;
+  }
+
+  body:not(.kalxr-home) .md-footer {
+    padding: 0.75rem 0;
+  }
+
+  body:not(.kalxr-home) .md-footer-meta {
+    display: none;
+  }
 }
 
 /* 隐藏左侧栏后，内容区居中占满 */

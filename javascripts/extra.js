@@ -45,6 +45,25 @@ function initKalxrAudio() {
   });
 }
 
+function initKalxrMobileNav() {
+  var labels = {
+    "Nikon记忆": "记忆"
+  };
+
+  document.querySelectorAll(".md-tabs__link").forEach(function (link) {
+    var full = link.dataset.kalxrNavFull || link.textContent.trim();
+    if (!link.dataset.kalxrNavFull) {
+      link.dataset.kalxrNavFull = full;
+    }
+
+    if (window.matchMedia("(max-width: 1219px)").matches && labels[full]) {
+      link.textContent = labels[full];
+    } else {
+      link.textContent = full;
+    }
+  });
+}
+
 function initKalxrPage() {
   var path = location.pathname.replace(/\/$/, "") || "/";
   var isHome =
@@ -64,7 +83,10 @@ function initKalxrPage() {
     initKalxrHome();
   }
 
+  initKalxrMobileNav();
   initKalxrAudio();
 }
+
+window.addEventListener("resize", initKalxrMobileNav);
 
 document$.subscribe(initKalxrPage);
