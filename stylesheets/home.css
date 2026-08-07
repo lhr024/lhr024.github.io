@@ -50,20 +50,33 @@ body.kalxr-home .md-typeset h1 {
 .kalxr-page-bg {
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
   background: #141416;
 }
 
-.kalxr-page-bg picture,
-.kalxr-page-bg-img {
+.kalxr-page-bg picture {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 .kalxr-page-bg-img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   object-fit: cover;
   object-position: center;
   opacity: 0;
@@ -78,6 +91,7 @@ body.kalxr-home .md-typeset h1 {
 .kalxr-section {
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
   overflow: hidden;
   scroll-snap-align: start;
@@ -166,11 +180,15 @@ body.kalxr-home .md-typeset h1 {
 .kalxr-scroll-hint {
   position: absolute;
   bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   z-index: 2;
   cursor: pointer;
-  animation: kalxr-bounce 2s infinite;
   opacity: 0;
   animation: kalxr-bounce 2s 1.2s infinite, kalxr-fade-up 0.8s 1s forwards;
 }
@@ -179,6 +197,7 @@ body.kalxr-home .md-typeset h1 {
   display: block;
   font-size: 0.85rem;
   letter-spacing: 0.2em;
+  padding-left: 0.2em;
   margin-bottom: 0.6rem;
   opacity: 0.85;
 }
@@ -367,14 +386,30 @@ body.kalxr-home .md-typeset h1 {
 }
 
 @keyframes kalxr-bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-8px); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 @media (max-width: 768px) {
+  .kalxr-page-bg {
+    background-image: url("../theme1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .kalxr-page-bg-img {
-    object-fit: cover;
-    object-position: center;
+    min-height: 100dvh;
+    object-position: center center;
+  }
+
+  .kalxr-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.06) 55%,
+      rgba(0, 0, 0, 0.22) 100%
+    );
   }
 
   .kalxr-subtitle-line {
