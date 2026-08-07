@@ -373,8 +373,8 @@ body.kalxr-home .md-typeset h1 {
 
 @media (max-width: 768px) {
   .kalxr-page-bg-img {
-    object-fit: contain;
-    object-position: center top;
+    object-fit: cover;
+    object-position: center;
   }
 
   .kalxr-subtitle-line {
