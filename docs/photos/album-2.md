@@ -55,20 +55,19 @@
       0 12px 28px rgba(0, 0, 0, 0.52);
   }
 
-  @media (max-width: 768px) {
-    .photo-row {
-      grid-template-columns: 1fr;
-    }
-
-    .photo-row--duo {
-      max-width: 520px;
-    }
-  }
-
   .photo-row--duo {
     grid-template-columns: repeat(2, 1fr);
     max-width: 960px;
     margin: 1.5rem auto;
+  }
+
+  @media (max-width: 768px) {
+    .photo-row,
+    .photo-row.photo-row--duo {
+      grid-template-columns: 1fr;
+      max-width: none;
+      margin: 1.5rem 0;
+    }
   }
 
   .moon-intro {
