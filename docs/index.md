@@ -8,7 +8,16 @@ hide:
 
 <div class="kalxr-homepage" markdown="0">
 
-<div class="kalxr-page-bg" aria-hidden="true"></div>
+<link rel="preload" as="image" href="theme.webp" type="image/webp" media="(min-width: 769px)">
+<link rel="preload" as="image" href="theme-mobile.webp" type="image/webp" media="(max-width: 768px)">
+
+<div class="kalxr-page-bg" aria-hidden="true">
+  <picture>
+    <source media="(max-width: 768px)" srcset="theme-mobile.webp" type="image/webp">
+    <source media="(min-width: 769px)" srcset="theme.webp" type="image/webp">
+    <img class="kalxr-page-bg-img" src="theme.png" alt="" decoding="async" fetchpriority="high">
+  </picture>
+</div>
 
 <section class="kalxr-section kalxr-hero" id="kalxrHero">
   <div class="kalxr-hero-overlay"></div>

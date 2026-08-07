@@ -50,9 +50,28 @@ body.kalxr-home .md-typeset h1 {
 .kalxr-page-bg {
   position: fixed;
   inset: 0;
-  background: url("../theme.png") center/cover no-repeat;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
+  background: #141416;
+}
+
+.kalxr-page-bg picture,
+.kalxr-page-bg-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.kalxr-page-bg-img {
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.55s ease;
+}
+
+.kalxr-page-bg.is-loaded .kalxr-page-bg-img {
+  opacity: 1;
 }
 
 /* ========== 全屏区块 ========== */
@@ -353,6 +372,11 @@ body.kalxr-home .md-typeset h1 {
 }
 
 @media (max-width: 768px) {
+  .kalxr-page-bg-img {
+    object-fit: contain;
+    object-position: center top;
+  }
+
   .kalxr-subtitle-line {
     white-space: normal;
     font-size: clamp(0.9rem, 3.8vw, 1.2rem);
