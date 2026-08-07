@@ -271,6 +271,41 @@ body:not(.kalxr-home) .md-footer-meta {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
+/* ========== 歌词引用块 ========== */
+.md-typeset .moon-lyrics {
+  margin: 0 0 2rem;
+  padding: 1.2rem 1.4rem;
+  border-left: 4px solid var(--kalxr-blue, #044ea2);
+  background: rgba(4, 78, 162, 0.06);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+
+.md-typeset .moon-lyrics cite {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-style: normal;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  opacity: 0.65;
+}
+
+.md-typeset .moon-lyrics p {
+  margin: 0;
+}
+
+.md-typeset .moon-lyrics p.moon-lyrics-gap {
+  margin: 0.75em 0;
+  line-height: 0.5;
+}
+
+body[data-md-color-scheme="slate"]:not(.kalxr-home) .moon-lyrics {
+  background: rgba(110, 180, 255, 0.08);
+  border-left-color: #6eb4ff;
+}
+
 .kalxr-photo-lightbox {
   position: fixed;
   inset: 0;
@@ -447,12 +482,39 @@ body.kalxr-lightbox-open {
   color: var(--kalxr-blue);
 }
 
+.md-typeset .kalxr-song-group {
+  border-bottom: 1px solid rgba(4, 78, 162, 0.1);
+}
+
+.md-typeset .kalxr-song-group .kalxr-song-item {
+  border-bottom: none;
+  padding-bottom: 0.35rem;
+}
+
+.md-typeset .kalxr-song-note {
+  margin: 0;
+  padding: 0 0 0.85rem 1.75rem;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--kalxr-ink);
+  opacity: 0.65;
+}
+
 body[data-md-color-scheme="slate"]:not(.kalxr-home) .kalxr-song-list {
   border-top-color: rgba(110, 180, 255, 0.12);
 }
 
 body[data-md-color-scheme="slate"]:not(.kalxr-home) .kalxr-song-item {
   border-bottom-color: rgba(110, 180, 255, 0.12);
+}
+
+body[data-md-color-scheme="slate"]:not(.kalxr-home) .kalxr-song-group {
+  border-bottom-color: rgba(110, 180, 255, 0.12);
+}
+
+body[data-md-color-scheme="slate"]:not(.kalxr-home) .kalxr-song-note {
+  color: var(--kalxr-dark-fg);
+  opacity: 0.72;
 }
 
 body[data-md-color-scheme="slate"]:not(.kalxr-home) .kalxr-song-mark {
