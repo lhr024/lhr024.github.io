@@ -4,6 +4,22 @@ function initKalxrHome() {
   }
   document.body.dataset.kalxrHomeInit = "true";
 
+  var bgImg = document.querySelector(".kalxr-page-bg-img");
+  if (bgImg) {
+    var bgWrap = bgImg.closest(".kalxr-page-bg");
+    function markBgLoaded() {
+      if (bgWrap) {
+        bgWrap.classList.add("is-loaded");
+      }
+    }
+    if (bgImg.complete && bgImg.naturalWidth > 0) {
+      markBgLoaded();
+    } else {
+      bgImg.addEventListener("load", markBgLoaded);
+      bgImg.addEventListener("error", markBgLoaded);
+    }
+  }
+
   var scrollHint = document.getElementById("kalxrScrollHint");
   var modal = document.getElementById("kalxrModal");
   var card = document.getElementById("kalxrCard");
