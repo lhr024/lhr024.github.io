@@ -2,7 +2,22 @@
 
 2026 年 7 月，我去现场看了一场乐队演出。看到一半，脑子里忽然冒出一个念头：「如果在台上的是我的家人、朋友，那该有多幸福啊。」
 
-<div class="photo-row photo-row--single">
+<style>
+  .music-cover {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .music-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    cursor: default;
+  }
+</style>
+
+<div class="music-cover">
 
 <img src="../muxinyin.jpg" alt="幕星银乐队2026巡演杭州站">
 

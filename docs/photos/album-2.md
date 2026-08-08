@@ -57,8 +57,9 @@
 
   .photo-row--duo {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 960px;
-    margin: 1.5rem auto;
+    max-width: 100%;
+    margin: 1.5rem 0;
+    align-items: start;
   }
 
   @media (max-width: 768px) {
@@ -112,5 +113,7 @@
 
 <img src="../xianghu/xianghu1.JPG" alt="老虎洞">
 <img src="../xianghu/xianghu2.JPG" alt="孤独湘湖">
+<img src="../xianghu/xianghu3.JPG" alt="前些时候的湘湖">
+<img src="../xianghu/xianghu4.JPG" alt="湘湖 · 其实是西溪湿地">
 
 </div>
