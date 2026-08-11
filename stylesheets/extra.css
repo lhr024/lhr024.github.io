@@ -17,6 +17,58 @@ label[for="__search"] {
   display: none !important;
 }
 
+/* Secret Code 输入框（亮暗切换左侧） */
+.kalxr-secret-code-wrap {
+  display: flex;
+  align-items: center;
+  margin-right: 0.15rem;
+}
+
+.kalxr-secret-code {
+  width: 7.5rem;
+  height: 1.75rem;
+  padding: 0 0.55rem;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--kalxr-ink, #1a1a1a);
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.kalxr-secret-code::placeholder {
+  color: rgba(26, 26, 26, 0.45);
+}
+
+.kalxr-secret-code:focus {
+  border-color: var(--kalxr-blue, #044ea2);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+body[data-md-color-scheme="slate"] .kalxr-secret-code {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(28, 28, 36, 0.72);
+  color: var(--kalxr-dark-fg, #ececec);
+}
+
+body[data-md-color-scheme="slate"] .kalxr-secret-code::placeholder {
+  color: rgba(236, 236, 236, 0.42);
+}
+
+body[data-md-color-scheme="slate"] .kalxr-secret-code:focus {
+  border-color: var(--kalxr-dark-link, #6eb4ff);
+  background: rgba(28, 28, 36, 0.95);
+}
+
+@media screen and (max-width: 768px) {
+  .kalxr-secret-code {
+    width: 5.8rem;
+    font-size: 0.68rem;
+  }
+}
+
 /* 桌面端已有顶部标签导航，隐藏左侧重复导航栏 */
 @media screen and (min-width: 1220px) {
   .md-sidebar--primary {

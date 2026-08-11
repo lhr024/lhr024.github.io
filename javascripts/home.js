@@ -1,8 +1,15 @@
+function kalxrSiteUrl(path) {
+  var base = document.querySelector("base");
+  var root = base ? base.href : location.origin + "/";
+  return new URL(path, root).href;
+}
+
 function initKalxrHome() {
-  if (document.body.dataset.kalxrHomeInit === "true") {
+  var homepage = document.querySelector(".kalxr-homepage");
+  if (!homepage || homepage.dataset.kalxrHomeInit === "true") {
     return;
   }
-  document.body.dataset.kalxrHomeInit = "true";
+  homepage.dataset.kalxrHomeInit = "true";
 
   var bgImg = document.querySelector(".kalxr-page-bg-img");
   if (bgImg) {
@@ -31,7 +38,16 @@ function initKalxrHome() {
   var line2El = document.getElementById("kalxrLine2");
   var cursorEl = document.getElementById("kalxrCursor");
 
-  var subtitleLines = ["希望我的故事", "能带给你力量"];
+  var homepage = document.querySelector(".kalxr-homepage");
+  var subtitleLines = [
+    (homepage && homepage.dataset.kalxrLine1) || "希望我的故事",
+    (homepage && homepage.dataset.kalxrLine2) || "能带给你力量"
+  ];
+
+  var mainTitleEl = document.querySelector(".kalxr-main-title");
+  if (mainTitleEl && homepage && homepage.dataset.kalxrTitle) {
+    mainTitleEl.textContent = homepage.dataset.kalxrTitle;
+  }
   var subtitleTimer;
   var subtitlePhase = "line1";
   var subtitleIndex = 0;
@@ -145,25 +161,25 @@ function initKalxrHome() {
     interests: {
       title: "爱好",
       text: "这里记录我感兴趣的万事万物。",
-      link: "interests/",
+      link: kalxrSiteUrl("interests/"),
       color: "#e30512"
     },
     notes: {
       title: "随笔",
       text: "一些随想、记录与碎片文字。",
-      link: "notes/",
+      link: kalxrSiteUrl("notes/"),
       color: "#facd01"
     },
     photos: {
       title: "Nikon记忆",
       text: "生命中总有美好时刻值得记录。",
-      link: "photos/",
+      link: kalxrSiteUrl("photos/"),
       color: "#044ea2"
     },
     about: {
       title: "关于我",
       text: "你好，我是 KALXR。",
-      link: "about/",
+      link: kalxrSiteUrl("about/"),
       color: "#ffffff"
     }
   };
@@ -200,7 +216,7 @@ function initKalxrHome() {
 
   document.querySelectorAll("[data-kalxr-link]").forEach(function (block) {
     block.addEventListener("click", function () {
-      window.location.href = block.getAttribute("data-kalxr-link");
+      window.location.href = kalxrSiteUrl(block.getAttribute("data-kalxr-link"));
     });
   });
 
