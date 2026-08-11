@@ -12,11 +12,11 @@ hide:
   data-kalxr-line2="一直都记得">
 
 <link rel="preload" as="image" href="../../linbo.webp" type="image/webp" media="(min-width: 769px)">
-<link rel="preload" as="image" href="../../liumin.webp" type="image/webp" media="(max-width: 768px)">
+<link rel="preload" as="image" href="../../liumin.webp?v=2" type="image/webp" media="(max-width: 768px)">
 
 <div class="kalxr-page-bg" aria-hidden="true">
   <picture>
-    <source media="(max-width: 768px)" srcset="../../liumin.webp" type="image/webp">
+    <source media="(max-width: 768px)" srcset="../../liumin.webp?v=2" type="image/webp">
     <source media="(min-width: 769px)" srcset="../../linbo.webp" type="image/webp">
     <img class="kalxr-page-bg-img" src="../../linbo.webp" alt="" decoding="async" fetchpriority="high">
   </picture>
