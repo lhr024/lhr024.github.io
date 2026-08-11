@@ -12,38 +12,17 @@ function initKalxrHome() {
   homepage.dataset.kalxrHomeInit = "true";
 
   var bgWrap = homepage.querySelector(".kalxr-page-bg");
-  if (bgWrap && bgWrap.dataset.kalxrBgDesktop) {
-    bgWrap.style.setProperty("--kalxr-bg-desktop", "url('" + bgWrap.dataset.kalxrBgDesktop + "')");
-  }
-  if (bgWrap && bgWrap.dataset.kalxrBgMobile) {
-    bgWrap.style.setProperty("--kalxr-bg-mobile", "url('" + bgWrap.dataset.kalxrBgMobile + "')");
-  }
-
   var bgImg = homepage.querySelector(".kalxr-page-bg-img");
   if (bgImg && bgWrap) {
-    function revealBg() {
-      var show = function () {
-        bgWrap.classList.remove("is-loading");
-        bgWrap.classList.add("is-loaded");
-      };
-
-      if (bgImg.decode) {
-        bgImg.decode().then(show).catch(show);
-      } else {
-        show();
-      }
+    function markBgLoaded() {
+      bgWrap.classList.add("is-loaded");
     }
 
-    bgWrap.classList.add("is-loading");
-
     if (bgImg.complete && bgImg.naturalWidth > 0) {
-      revealBg();
+      markBgLoaded();
     } else {
-      bgImg.addEventListener("load", revealBg, { once: true });
-      bgImg.addEventListener("error", function () {
-        bgWrap.classList.remove("is-loading");
-        bgWrap.classList.add("is-error");
-      }, { once: true });
+      bgImg.addEventListener("load", markBgLoaded, { once: true });
+      bgImg.addEventListener("error", markBgLoaded, { once: true });
     }
   }
 

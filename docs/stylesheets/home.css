@@ -67,20 +67,6 @@ body.kalxr-home .md-typeset h1 {
   background-image: var(--kalxr-bg-desktop, none);
 }
 
-.kalxr-page-bg.is-loading::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(20, 20, 22, 0.28);
-  z-index: 1;
-  transition: opacity 0.45s ease;
-  pointer-events: none;
-}
-
-.kalxr-page-bg.is-loaded::after {
-  opacity: 0;
-}
-
 .kalxr-page-bg picture {
   position: absolute;
   inset: 0;
@@ -101,16 +87,11 @@ body.kalxr-home .md-typeset h1 {
   object-fit: cover;
   object-position: center;
   opacity: 0;
-  transform: scale(1.03);
-  filter: blur(10px);
-  transition: opacity 0.65s ease, transform 0.85s ease, filter 0.85s ease;
-  will-change: opacity, transform, filter;
+  transition: opacity 0.55s ease;
 }
 
 .kalxr-page-bg.is-loaded .kalxr-page-bg-img {
   opacity: 1;
-  transform: scale(1);
-  filter: blur(0);
 }
 
 /* ========== 全屏区块 ========== */
@@ -443,10 +424,6 @@ body.kalxr-home .md-typeset h1 {
 }
 
 @media (max-width: 768px) {
-  .kalxr-page-bg:not(.kalxr-page-bg--responsive) {
-    background-image: url("../theme1.webp");
-  }
-
   .kalxr-page-bg--responsive {
     background-image: var(--kalxr-bg-mobile, var(--kalxr-bg-desktop, none));
   }
@@ -499,15 +476,5 @@ body.kalxr-home .md-typeset h1 {
     opacity: 1;
     filter: none;
     transform: none;
-  }
-
-  .kalxr-page-bg-img {
-    transform: none;
-    filter: none;
-    transition: opacity 0.2s ease;
-  }
-
-  .kalxr-page-bg.is-loading::after {
-    transition: none;
   }
 }

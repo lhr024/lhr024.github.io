@@ -15,10 +15,10 @@ hide:
 <link rel="preload" as="image" href="../../liumin.JPG" media="(max-width: 768px)">
 
 <div class="kalxr-page-bg kalxr-page-bg--responsive" aria-hidden="true"
-  data-kalxr-bg-desktop="../../theme-default.png"
-  data-kalxr-bg-mobile="../../liumin.JPG">
+  style="--kalxr-bg-desktop: url('../../theme-default.png'); --kalxr-bg-mobile: url('../../liumin.JPG');">
   <picture>
     <source media="(max-width: 768px)" srcset="../../liumin.JPG">
+    <source media="(min-width: 769px)" srcset="../../theme-default.png">
     <img class="kalxr-page-bg-img" src="../../theme-default.png" alt="" decoding="async" fetchpriority="high">
   </picture>
 </div>
