@@ -63,10 +63,6 @@ body.kalxr-home .md-typeset h1 {
   background-repeat: no-repeat;
 }
 
-.kalxr-page-bg--responsive {
-  background-image: var(--kalxr-bg-desktop, none);
-}
-
 .kalxr-page-bg picture {
   position: absolute;
   inset: 0;
@@ -424,10 +420,6 @@ body.kalxr-home .md-typeset h1 {
 }
 
 @media (max-width: 768px) {
-  .kalxr-page-bg--responsive {
-    background-image: var(--kalxr-bg-mobile, var(--kalxr-bg-desktop, none));
-  }
-
   .kalxr-page-bg-img {
     min-height: 100dvh;
     object-position: center center;
