@@ -11,14 +11,15 @@ hide:
   data-kalxr-line1="每一段相遇"
   data-kalxr-line2="都值得珍藏">
 
-<link rel="preload" as="image" href="../../theme-default.png" media="(min-width: 769px)">
-<link rel="preload" as="image" href="../../theme-wide.png" media="(max-width: 768px)">
+<link rel="preload" as="image" href="../../theme-default.webp" type="image/webp" media="(min-width: 769px)">
+<link rel="preload" as="image" href="../../theme-wide.webp" type="image/webp" media="(max-width: 768px)">
 
 <div class="kalxr-page-bg kalxr-page-bg--responsive" aria-hidden="true"
-  style="--kalxr-bg-desktop: url('../../theme-default.png'); --kalxr-bg-mobile: url('../../theme-wide.png');">
+  style="--kalxr-bg-desktop: url('../../theme-default.webp'); --kalxr-bg-mobile: url('../../theme-wide.webp');">
   <picture>
+    <source media="(max-width: 768px)" srcset="../../theme-wide.webp" type="image/webp">
     <source media="(max-width: 768px)" srcset="../../theme-wide.png">
-    <source media="(min-width: 769px)" srcset="../../theme-default.png">
+    <source media="(min-width: 769px)" srcset="../../theme-default.webp" type="image/webp">
     <img class="kalxr-page-bg-img" src="../../theme-default.png" alt="" decoding="async" fetchpriority="high">
   </picture>
 </div>
