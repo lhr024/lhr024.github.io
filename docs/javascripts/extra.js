@@ -64,25 +64,80 @@ function initKalxrMobileNav() {
   });
 }
 
-function initKalxrPage() {
-  var path = location.pathname.replace(/\/$/, "") || "/";
-  var isHome =
-    path === "" ||
-    path === "/" ||
-    path.endsWith("/index.html") ||
-    path.split("/").filter(Boolean).length === 0;
+var kalxrSecretCodes = {
+  liumin: "secret/liumin/",
+  linbo: "secret/linbo/",
+  zhouzhirong: "secret/zhouzhirong/"
+};
 
-  document.body.classList.toggle("kalxr-home", isHome);
+function getKalxrPath() {
+  var path = location.pathname.replace(/\/$/, "") || "/";
+  if (path.endsWith("/index.html")) {
+    path = path.slice(0, -"/index.html".length) || "/";
+  }
+  return path;
+}
+
+function isKalxrImmersivePage(path) {
+  return path === "/" || path.indexOf("/secret/") === 0;
+}
+
+function initKalxrSecretCode() {
+  if (document.getElementById("kalxr-secret-code")) {
+    return;
+  }
+
+  var paletteForm = document.querySelector('[data-md-component="palette"]');
+  if (!paletteForm || !paletteForm.parentNode) {
+    return;
+  }
+
+  var wrap = document.createElement("div");
+  wrap.className = "kalxr-secret-code-wrap";
+
+  var input = document.createElement("input");
+  input.id = "kalxr-secret-code";
+  input.className = "kalxr-secret-code";
+  input.type = "text";
+  input.placeholder = "Secret Code";
+  input.autocomplete = "off";
+  input.spellcheck = false;
+  input.setAttribute("aria-label", "Secret Code");
+
+  input.addEventListener("keydown", function (event) {
+    if (event.key !== "Enter") {
+      return;
+    }
+
+    var code = input.value.trim().toLowerCase();
+    var target = kalxrSecretCodes[code];
+    if (target) {
+      var base = document.querySelector("base");
+      var root = base ? base.href : location.origin + "/";
+      window.location.href = new URL(target, root).href;
+    }
+  });
+
+  wrap.appendChild(input);
+  paletteForm.parentNode.insertBefore(wrap, paletteForm);
+}
+
+function initKalxrPage() {
+  var path = getKalxrPath();
+  var isImmersive = isKalxrImmersivePage(path);
+
+  document.body.classList.toggle("kalxr-home", isImmersive);
 
   var topic = document.querySelector('[data-md-component="header-topic"]');
   if (topic) {
-    topic.style.display = isHome ? "none" : "";
+    topic.style.display = isImmersive ? "none" : "";
   }
 
-  if (isHome && typeof initKalxrHome === "function") {
+  if (document.querySelector(".kalxr-homepage") && typeof initKalxrHome === "function") {
     initKalxrHome();
   }
 
+  initKalxrSecretCode();
   initKalxrMobileNav();
   initKalxrAudio();
 }

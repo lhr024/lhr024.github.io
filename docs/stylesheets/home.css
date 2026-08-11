@@ -140,6 +140,32 @@ body.kalxr-home .md-typeset h1 {
   min-height: 2.2rem;
 }
 
+.kalxr-hero-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.65rem 1.4rem;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.88);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  animation: kalxr-fade-up 0.8s 1.4s forwards;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.kalxr-hero-link:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
 .kalxr-subtitle-line {
   margin: 0;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -393,6 +419,27 @@ body.kalxr-home .md-typeset h1 {
 @media (max-width: 768px) {
   .kalxr-page-bg {
     background-image: url("../theme1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .kalxr-page-bg--liumin {
+    background-image: url("../liumin.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .kalxr-page-bg--linbo {
+    background-image: url("../liumin.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .kalxr-page-bg--zhouzhirong {
+    background-image: url("../theme-wide.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

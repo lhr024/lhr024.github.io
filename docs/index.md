@@ -6,7 +6,10 @@ hide:
   - title
 ---
 
-<div class="kalxr-homepage" markdown="0">
+<div class="kalxr-homepage" markdown="0"
+  data-kalxr-title="关于我KALXR"
+  data-kalxr-line1="希望我的故事"
+  data-kalxr-line2="能带给你力量">
 
 <link rel="preload" as="image" href="theme.webp" type="image/webp" media="(min-width: 769px)">
 <link rel="preload" as="image" href="theme1.webp" type="image/webp" media="(max-width: 768px)">
