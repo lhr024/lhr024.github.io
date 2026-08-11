@@ -18,9 +18,15 @@ function initKalxrHome() {
       bgWrap.classList.add("is-loaded");
     }
 
-    if (bgImg.complete && bgImg.naturalWidth > 0) {
-      markBgLoaded();
-    } else {
+    function tryReveal() {
+      if (bgImg.complete && bgImg.naturalWidth > 0) {
+        markBgLoaded();
+        return true;
+      }
+      return false;
+    }
+
+    if (!tryReveal()) {
       bgImg.addEventListener("load", markBgLoaded, { once: true });
       bgImg.addEventListener("error", markBgLoaded, { once: true });
     }
