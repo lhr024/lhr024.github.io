@@ -12,9 +12,15 @@
 <style>
   .about-quotes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 0 0 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .about-quotes {
+      grid-template-columns: 1fr;
+    }
   }
 
   .about-quote {
@@ -76,6 +82,9 @@
   <cite>B站UP 橙海飞鸟</cite>
 </blockquote>
 
+<blockquote class="about-quote about-quote--classic">
+  <p>吾心安处是吾乡</p>
+</blockquote>
 </div>
 
 B站重度用户，欢迎关注我的 [B 站主页](https://space.bilibili.com/400372661)。
