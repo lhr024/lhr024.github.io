@@ -14,7 +14,9 @@ hide:
 <link rel="preload" as="image" href="../../theme-default.png" media="(min-width: 769px)">
 <link rel="preload" as="image" href="../../theme-wide.png" media="(max-width: 768px)">
 
-<div class="kalxr-page-bg kalxr-page-bg--zhouzhirong" aria-hidden="true">
+<div class="kalxr-page-bg kalxr-page-bg--responsive" aria-hidden="true"
+  data-kalxr-bg-desktop="../../theme-default.png"
+  data-kalxr-bg-mobile="../../theme-wide.png">
   <picture>
     <source media="(max-width: 768px)" srcset="../../theme-wide.png">
     <img class="kalxr-page-bg-img" src="../../theme-default.png" alt="" decoding="async" fetchpriority="high">

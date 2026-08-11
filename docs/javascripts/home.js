@@ -11,19 +11,39 @@ function initKalxrHome() {
   }
   homepage.dataset.kalxrHomeInit = "true";
 
-  var bgImg = document.querySelector(".kalxr-page-bg-img");
-  if (bgImg) {
-    var bgWrap = bgImg.closest(".kalxr-page-bg");
-    function markBgLoaded() {
-      if (bgWrap) {
+  var bgWrap = homepage.querySelector(".kalxr-page-bg");
+  if (bgWrap && bgWrap.dataset.kalxrBgDesktop) {
+    bgWrap.style.setProperty("--kalxr-bg-desktop", "url('" + bgWrap.dataset.kalxrBgDesktop + "')");
+  }
+  if (bgWrap && bgWrap.dataset.kalxrBgMobile) {
+    bgWrap.style.setProperty("--kalxr-bg-mobile", "url('" + bgWrap.dataset.kalxrBgMobile + "')");
+  }
+
+  var bgImg = homepage.querySelector(".kalxr-page-bg-img");
+  if (bgImg && bgWrap) {
+    function revealBg() {
+      var show = function () {
+        bgWrap.classList.remove("is-loading");
         bgWrap.classList.add("is-loaded");
+      };
+
+      if (bgImg.decode) {
+        bgImg.decode().then(show).catch(show);
+      } else {
+        show();
       }
     }
+
+    bgWrap.classList.add("is-loading");
+
     if (bgImg.complete && bgImg.naturalWidth > 0) {
-      markBgLoaded();
+      revealBg();
     } else {
-      bgImg.addEventListener("load", markBgLoaded);
-      bgImg.addEventListener("error", markBgLoaded);
+      bgImg.addEventListener("load", revealBg, { once: true });
+      bgImg.addEventListener("error", function () {
+        bgWrap.classList.remove("is-loading");
+        bgWrap.classList.add("is-error");
+      }, { once: true });
     }
   }
 
