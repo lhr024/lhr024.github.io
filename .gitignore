@@ -1,2 +1,5 @@
 site/
 __pycache__/
+
+# Over GitHub 100MB limit; keep large videos local only
+docs/notes/birthday/*.mp4
