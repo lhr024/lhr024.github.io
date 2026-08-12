@@ -511,6 +511,20 @@
     border: 0;
   }
 
+  .birthday-video__frame--mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .birthday-video__frame--desktop {
+      display: none;
+    }
+
+    .birthday-video__frame--mobile {
+      display: block;
+    }
+  }
+
   .birthday-video__link {
     display: inline-block;
     margin-top: 0.55rem;
@@ -544,15 +558,25 @@
 </blockquote>
 
 <div class="birthday-video">
-  <div class="birthday-video__frame">
+  <div class="birthday-video__frame birthday-video__frame--desktop">
     <iframe
-      src="https://player.bilibili.com/player.html?isOutside=true&aid=117021098383402&bvid=BV1xz3m63Ek3&cid=40509573431&p=1"
+      src="https://player.bilibili.com/player.html?isOutside=true&aid=117021098383402&bvid=BV1xz3m63Ek3&cid=40509573431&p=1&autoplay=0"
       scrolling="no"
       frameborder="0"
       allowfullscreen="true"
       title="忘记了也没关系">
     </iframe>
   </div>
+  <div class="birthday-video__frame birthday-video__frame--mobile">
+    <iframe
+      src="https://www.bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&bvid=BV1xz3m63Ek3&cid=40509573431&p=1&high_quality=1&danmaku=0"
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen="true"
+      title="忘记了也没关系">
+    </iframe>
+  </div>
+  <a class="birthday-video__link" href="https://www.bilibili.com/video/BV1xz3m63Ek3" target="_blank" rel="noopener">若无法播放，点击在 B 站打开</a>
 </div>
 
 <p>想说的话就是这些。我是KALXR，我们明年见。</p>
