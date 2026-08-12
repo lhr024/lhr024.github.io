@@ -27,11 +27,27 @@
     margin: 1rem 0 1.75rem;
   }
 
-  .birthday-video video {
+  .birthday-video__frame {
+    position: relative;
     width: 100%;
-    height: auto;
-    display: block;
+    padding-top: 56.25%;
+    overflow: hidden;
     border-radius: 4px;
+    background: #000;
+  }
+
+  .birthday-video__frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .birthday-video__link {
+    display: inline-block;
+    margin-top: 0.55rem;
+    font-size: 0.92rem;
   }
 </style>
 
@@ -66,9 +82,15 @@
 </blockquote>
 
 <div class="birthday-video">
-  <video controls preload="metadata" src="忘记了也没关系.mp4">
-    你的浏览器不支持视频播放。
-  </video>
+  <div class="birthday-video__frame">
+    <iframe
+      src="https://player.bilibili.com/player.html?isOutside=true&aid=117021098383402&bvid=BV1xz3m63Ek3&cid=40509573431&p=1"
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen="true"
+      title="忘记了也没关系">
+    </iframe>
+  </div>
 </div>
 
 
