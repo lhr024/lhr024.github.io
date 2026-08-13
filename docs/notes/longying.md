@@ -1,6 +1,6 @@
 # 龙樱
 
-## P2
+## EP2
 
 <style>
   .longying-cover {
@@ -95,7 +95,7 @@
 
 </figure>
 
-## P3
+## EP3
 
 <figure class="longying-figure">
 
@@ -151,6 +151,21 @@
 <div class="longying-cover">
 
 <img src="p3-6.png" alt="龙樱">
+
+</div>
+
+</figure>
+
+## EP5
+真是 CS 亲妈啊
+
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p5-1.png" alt="龙樱">
 
 </div>
 
