@@ -186,3 +186,18 @@
 </div>
 
 </figure>
+
+## EP7
+这话说的好，当年读书的时候有人给我说就好了
+
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p7-1.png" alt="龙樱">
+
+</div>
+
+</figure>
