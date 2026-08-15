@@ -170,3 +170,19 @@
 </div>
 
 </figure>
+
+
+## EP6
+人生导师，历史是个圈，世界兜兜转转还是这个样子
+
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p6-1.png" alt="龙樱">
+
+</div>
+
+</figure>
