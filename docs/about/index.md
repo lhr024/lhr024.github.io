@@ -87,4 +87,10 @@
 </blockquote>
 </div>
 
+<blockquote class="about-quote about-quote--classic">
+  <p>如果再也见不到你，祝你早安，午安，晚安</p>
+  <cite>《楚门的世界》</cite>
+</blockquote>
+</div>
+
 B站重度用户，欢迎关注我的 [B 站主页](https://space.bilibili.com/400372661)。
