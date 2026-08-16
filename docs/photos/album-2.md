@@ -1,4 +1,6 @@
-# 湘湖 2026.07
+# 湘湖 
+
+## 2026.07
 
 <style>
   .photo-row {
@@ -62,9 +64,17 @@
     align-items: start;
   }
 
+  .photo-row--trio {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    margin: 1.5rem 0;
+    align-items: start;
+  }
+
   @media (max-width: 768px) {
     .photo-row,
-    .photo-row.photo-row--duo {
+    .photo-row.photo-row--duo,
+    .photo-row.photo-row--trio {
       grid-template-columns: 1fr;
       max-width: none;
       margin: 1.5rem 0;
@@ -115,5 +125,29 @@
 <img src="../xianghu/xianghu2.JPG" alt="孤独湘湖">
 <img src="../xianghu/xianghu3.JPG" alt="前些时候的湘湖">
 <img src="../xianghu/xianghu4.JPG" alt="湘湖 · 其实是西溪湿地">
+
+</div>
+
+## 2026.08
+
+<p class="moon-intro">连连阴雨过后，这天难得没下雨。从窑里坞下车，往前走。先绕着湘湖外侧走，经过跨湖桥进入内圈，绕过一圈从遗址博物馆坐上回程的车</p>
+
+<div class="photo-row photo-row--duo">
+
+<img src="../xianghu/p2.JPG" alt="湘湖">
+<img src="../xianghu/p3.JPG" alt="湘湖">
+<img src="../xianghu/p5.JPG" alt="湘湖">
+<img src="../xianghu/p6.JPG" alt="湘湖">
+
+</div>
+
+<div class="photo-row photo-row--trio">
+
+<img src="../xianghu/p1.JPG" alt="湘湖">
+<img src="../xianghu/p4.JPG" alt="湘湖">
+<img src="../xianghu/p7.JPG" alt="湘湖">
+<img src="../xianghu/p8.JPG" alt="湘湖">
+<img src="../xianghu/p9.JPG" alt="湘湖">
+<img src="../xianghu/p10.JPG" alt="湘湖">
 
 </div>
