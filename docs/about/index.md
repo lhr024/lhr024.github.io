@@ -91,5 +91,10 @@
   <cite>《楚门的世界》</cite>
 </blockquote>
 
+<blockquote class="about-quote about-quote--classic">
+  <p>相逢即是人间惊鸿，重逢便是心安归处。世间万般道理，终究一句：待卿归来，人间虽苦，无妨</p>
+  <cite></cite>
+</blockquote>
+
 </div>
 B站重度用户，欢迎关注我的 [B 站主页](https://space.bilibili.com/400372661)。
