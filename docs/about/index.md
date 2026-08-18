@@ -96,5 +96,9 @@
   <cite></cite>
 </blockquote>
 
+<blockquote class="about-quote about-quote--classic">
+  <p>我们怎么告别呢？像当初见面那样</p>
+  <cite></cite>
+</blockquote>
 </div>
 B站重度用户，欢迎关注我的 [B 站主页](https://space.bilibili.com/400372661)。
