@@ -201,3 +201,18 @@
 </div>
 
 </figure>
+
+## EP8
+笑死，但是说的没毛病
+
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p8-1.png" alt="龙樱">
+
+</div>
+
+</figure>
