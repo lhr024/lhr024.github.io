@@ -216,3 +216,17 @@
 </div>
 
 </figure>
+
+## EP9
+这集神回，关于如何长大，家长如何与子女相处，很有参考价值
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p9-1.png" alt="龙樱">
+
+</div>
+
+</figure>
