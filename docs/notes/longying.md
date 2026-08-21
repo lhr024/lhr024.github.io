@@ -230,3 +230,43 @@
 </div>
 
 </figure>
+
+## EP10
+生命中有些时刻，好心就是没办法办好事的。有些错误也是没法避免的，只有经历过才会明白，我们总要和世界和解。
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p10-1.png" alt="龙樱">
+
+</div>
+
+</figure>
+
+愿考试之神眷顾！
+
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p10-2.png" alt="龙樱">
+
+</div>
+
+</figure>
+
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p10-3.png" alt="龙樱">
+
+</div>
+
+</figure>
