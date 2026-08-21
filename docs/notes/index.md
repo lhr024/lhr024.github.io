@@ -8,3 +8,4 @@
 - [《龙樱》](longying.md) —— 2026.08
 - [《欢迎来龙餐馆》](longchef.md) —— 2026.08
 - [一只生日盏](birthday.md) —— 2026.08.16
+- [鸣潮](mingchao.md)
