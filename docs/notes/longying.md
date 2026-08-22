@@ -270,3 +270,20 @@
 </div>
 
 </figure>
+
+## EP11
+真是神作，一切都在情理之中，从头爽到尾，三观也很正
+
+<div class="longying-cover longying-cover--duo">
+
+<img src="p11-1.png" alt="龙樱">
+<img src="p11-2.png" alt="龙樱">
+
+</div>
+
+<div class="longying-cover longying-cover--duo">
+
+<img src="p11-3.png" alt="龙樱">
+<img src="p11-4.png" alt="龙樱">
+
+</div>
