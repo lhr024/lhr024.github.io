@@ -87,7 +87,7 @@
 
 <div class="longying-cover">
 
-<img src="p1.png" alt="清霄">
+<img src="p1.png" alt="清宵">
 
 </div>
 
