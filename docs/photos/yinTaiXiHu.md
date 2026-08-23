@@ -105,5 +105,6 @@
 <img src="../yintaixihu/p14.JPG" alt="银泰西湖">
 <img src="../yintaixihu/p15.JPG" alt="银泰西湖">
 <img src="../yintaixihu/p16.JPG" alt="银泰西湖">
+<img src="../yintaixihu/p17.jpg" alt="银泰西湖">
 
 </div>
