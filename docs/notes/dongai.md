@@ -84,13 +84,31 @@
 
 ## EP1
 
-第一集就形成了四边形，太效率了。
+第一集就形成了四边形，太效率了。舞台已经搭好，等待神仙开演。都不简单啊，不简单啊。
 
 <figure class="longying-figure">
 
 <div class="longying-cover">
 
 <img src="p1-1.png" alt="东京爱情故事">
+
+</div>
+
+</figure>
+
+<div class="longying-cover longying-cover--duo">
+
+<img src="p1-2.png" alt="东京爱情故事">
+<img src="p1-3.png" alt="东京爱情故事">
+
+</div>
+
+要多幸运才能遇到一个满眼是你的女孩子
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p1-4.png" alt="东京爱情故事">
 
 </div>
 
