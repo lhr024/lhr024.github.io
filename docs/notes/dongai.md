@@ -119,3 +119,15 @@
 
 ## EP5
 看得好心疼啊，莉香诶。确实是只有那个时期才能拍出的作品。
+
+## EP6
+坏菜啦
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p6-1.png" alt="东京爱情故事">
+
+</div>
+
+</figure>
