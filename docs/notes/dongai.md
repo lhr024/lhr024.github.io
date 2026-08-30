@@ -82,6 +82,19 @@
 
 # 东京爱情故事
 
+## EP0
+双十一上映，难绷
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p0.png" alt="东京爱情故事">
+
+</div>
+
+</figure>
+
 ## EP1
 
 第一集就形成了四边形，太效率了。舞台已经搭好，等待神仙开演。都不简单啊，不简单啊。
@@ -127,6 +140,18 @@
 <div class="longying-cover">
 
 <img src="p6-1.png" alt="东京爱情故事">
+
+</div>
+
+</figure>
+
+## EP8
+原来电车名场面是出自这里，造福了多少经典时刻啊
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p8-1.png" alt="东京爱情故事">
 
 </div>
 
