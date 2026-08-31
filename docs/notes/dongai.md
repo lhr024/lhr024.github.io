@@ -156,3 +156,30 @@
 </div>
 
 </figure>
+
+## EP9
+小天使最后的笑容
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p9-1.png" alt="东京爱情故事">
+
+</div>
+
+</figure>
+
+不能理解，无法原谅
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p9-2.png" alt="东京爱情故事">
+
+</div>
+
+</figure>
+
+## EP11
+能不能不要bad ending啊，球球了。但也理解这样的解决能够称得上经典。如果是幸福结局或许会有些平淡，也不会让人记住太久。是这样就好，这样就够了。
