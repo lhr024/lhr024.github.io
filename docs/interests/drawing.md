@@ -10,3 +10,12 @@
 <img src="../myself.png" alt="自画">
 
 </div>
+
+## 2026.09
+好久没画了，抄一个猫猫狗狗
+
+<div class="photo-row photo-row--single">
+
+<img src="../clouds.png" alt="云朵">
+
+</div>
