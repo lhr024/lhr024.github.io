@@ -66,8 +66,7 @@ function initKalxrMobileNav() {
 
 var kalxrSecretCodes = {
   liumin: "secret/liumin/",
-  linbo: "secret/linbo/",
-  zhouzhirong: "secret/zhouzhirong/"
+  linbo: "secret/linbo/"
 };
 
 function getKalxrPath() {
