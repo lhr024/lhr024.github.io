@@ -7,7 +7,7 @@
 
 另一个同样重要的动机，是想分享日常生活和人生思考。总的来说，我算是一个比较矫情的人，需要有个地方写写那些似是而非的东西。人年纪大了，总爱回忆过去；也想在这里，给自己留些回忆。
 
-## 一些我认为正确的话
+## 有感触的话
 
 <style>
   .about-quotes {
@@ -91,21 +91,12 @@
 </blockquote>
 
 <blockquote class="about-quote about-quote--classic">
-  <p>吾心安处是吾乡</p>
-</blockquote>
-
-<blockquote class="about-quote about-quote--classic">
-  <p>如果再也见不到你，祝你早安，午安，晚安</p>
-  <cite>《楚门的世界》</cite>
-</blockquote>
-
-<blockquote class="about-quote about-quote--classic">
-  <p>相逢即是人间惊鸿，重逢便是心安归处。世间万般道理，终究一句：待卿归来，人间虽苦，无妨</p>
+  <p>我们怎么告别呢？像当初见面那样</p>
   <cite></cite>
 </blockquote>
 
 <blockquote class="about-quote about-quote--classic">
-  <p>我们怎么告别呢？像当初见面那样</p>
+  <p>当事实发生伤害就已经造成了，与是否被发现并无关系</p>
   <cite></cite>
 </blockquote>
 
@@ -116,11 +107,27 @@
   <cite></cite>
 </blockquote>
 
-<blockquote class="about-quote about-quote--classic">
-  <p>当事实发生伤害就已经造成了，与是否被发现并无关系</p>
-  <cite></cite>
-</blockquote>
-
 </div>
 
+## 动听的话
+<div class="about-quotes">
+<blockquote class="about-quote about-quote--classic">
+  <p>吾心安处是吾乡</p>
+</blockquote>
+
+<blockquote class="about-quote about-quote--classic">
+  <p>如果再也见不到你，祝你早安，午安，晚安</p>
+  <cite>《楚门的世界》</cite>
+</blockquote>
+
+<blockquote class="about-quote about-quote--classic">
+  <p>相逢即是人间惊鸿，重逢便是心安归处。世间万般道理，终究一句：待卿归来，人间虽苦，无妨</p>
+  <cite>剑来</cite>
+</blockquote>
+
+<blockquote class="about-quote about-quote--classic">
+  <p>寒风知我相思意，可燃风雪可燃冰</p>
+  <cite>CS2</cite>
+</blockquote>
+</div>
 B站重度用户，欢迎关注我的 [B 站主页](https://space.bilibili.com/400372661)。
