@@ -129,5 +129,12 @@
   <p>寒风知我相思意，可燃风雪可燃冰</p>
   <cite>CS2</cite>
 </blockquote>
+
+<blockquote class="about-quote about-quote--classic">
+  <p>愿你春寒衣暖，愁眉舒展，次次推窗就是明月当空，绿水青山</p>
+  <cite>CS2</cite>
+</blockquote>
+
+
 </div>
 B站重度用户，欢迎关注我的 [B 站主页](https://space.bilibili.com/400372661)。
