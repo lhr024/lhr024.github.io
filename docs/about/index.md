@@ -132,7 +132,7 @@
 
 <blockquote class="about-quote about-quote--classic">
   <p>愿你春寒衣暖，愁眉舒展，次次推窗就是明月当空，绿水青山</p>
-  <cite>CS2</cite>
+  <cite>剑来</cite>
 </blockquote>
 
 
