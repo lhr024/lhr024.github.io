@@ -107,6 +107,11 @@
   <cite></cite>
 </blockquote>
 
+<blockquote class="about-quote about-quote--classic about-quote--full">
+  <p>爱是在他者中死去。透过我爱你，你也爱我，我在思念我的你之中，找回了自己；在我放弃自己后，又在保存着我的你之中，赢回了自己。</p>
+  <cite>《爱欲之死》</cite>
+</blockquote>
+
 </div>
 
 ## 动听的话
