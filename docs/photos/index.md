@@ -10,3 +10,4 @@
 - [YinTai Xihu Lake 2026.08](yinTaiXiHu.md)
 - [太子湾雷峰塔西湖 2026.09](taiZiWan.md)
 - [人类观察计划/静影沉璧 2026.09](jing.md)
+- [九月的尾巴 2026.09](september.md)
