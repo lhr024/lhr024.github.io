@@ -94,10 +94,8 @@
 <div class="photo-row photo-row--duo">
 
 <img src="p1.JPG" alt="太子湾公园">
-<img src="p2.JPG" alt="西湖">
 <img src="p4.JPG" alt="西湖">
 <img src="p7.JPG" alt="西湖">
-<img src="p8.JPG" alt="西湖">
 <img src="p9.JPG" alt="雷峰塔">
 <img src="p13.JPG" alt="西湖">
 <img src="p12.JPG" alt="西湖">
