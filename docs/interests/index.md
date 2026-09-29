@@ -8,3 +8,4 @@
 - [乐理](music.md)
 - [游泳](swimming.md)
 - [ChiliChill乐团](chilichill.md)
+- [ずっと真夜中でいいのに。（ZTMY）](ZTMY.md)
