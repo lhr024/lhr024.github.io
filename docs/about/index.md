@@ -112,6 +112,12 @@
   <cite>《爱欲之死》</cite>
 </blockquote>
 
+<blockquote class="about-quote about-quote--classic about-quote--full">
+  <p>开启恋爱的表白是终点站而不是冲锋号，你们可以拉扯暧昧一段时间呀，慢慢了解对方，真觉得还行再试试，接触又不违法。有一句话不是叫奔向幸福的过程中是最幸福的，恋爱前的暧昧期其实是很快乐的，不用对彼此负责的时候说话啥的都很随心，很多时候确认关系之后反而会很难过。</p>
+  <cite>98大师</cite>
+</blockquote>
+
+
 </div>
 
 ## 动听的话
