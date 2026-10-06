@@ -93,7 +93,7 @@ You gotta treat every day like a holiday.
 
 <div class="photo-row photo-row--duo">
 
-<img src="P1.png" alt="九月的尾巴">
+<img src="P1.jpg" alt="九月的尾巴">
 <img src="P2.jpg" alt="九月的尾巴">
 
 </div>
