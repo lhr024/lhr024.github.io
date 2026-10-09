@@ -4,6 +4,7 @@
 
 ## 相册列表
 
+- [早些时候](album-0.md)
 - [Moon 2026.07](album-1.md)
 - [Xianghu Lake 2026.07](album-2.md)
 - [City Balcony 2026.08](cityPlatform.md)
