@@ -7,7 +7,7 @@
 
 另一个同样重要的动机，是想分享日常生活和人生思考。总的来说，我算是一个比较矫情的人，需要有个地方写写那些似是而非的东西。人年纪大了，总爱回忆过去；也想在这里，给自己留些回忆。
 
-## 有感触的话
+## 隽语
 
 <style>
   .about-quotes {
@@ -120,7 +120,7 @@
 
 </div>
 
-## 动听的话
+## 佳音
 <div class="about-quotes">
 <blockquote class="about-quote about-quote--classic">
   <p>吾心安处是吾乡</p>
@@ -146,6 +146,10 @@
   <cite>剑来</cite>
 </blockquote>
 
+<blockquote class="about-quote about-quote--classic">
+  <p>Every story has an ending, but every ending is a new beginning</p>
+  <cite></cite>
+</blockquote>
 
 </div>
 B站重度用户，欢迎关注我的 [B 站主页](https://space.bilibili.com/400372661)。
