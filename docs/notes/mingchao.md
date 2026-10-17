@@ -92,3 +92,17 @@
 </div>
 
 </figure>
+
+# 2026.10
+白月光。四十抽就出了，但是歪过一次。所以该不该算欧呢？
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="p2.png" alt="千咲">
+
+</div>
+
+</figure>
