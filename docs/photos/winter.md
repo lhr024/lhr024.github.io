@@ -115,7 +115,7 @@
 </style>
 
 ## 家乡
-离别最是不舍。
+离家最是不舍。
 
 <div class="photo-row photo-row--duo">
 
