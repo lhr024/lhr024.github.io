@@ -117,10 +117,25 @@
 ## 家乡
 离家最是不舍。
 
-<div class="photo-row photo-row--duo">
-
 <img src="../winter/p1.jpg" alt="家乡">
+
+</div>
+
+<div class="photo-row">
+
 <img src="../winter/p2.jpg" alt="家乡">
 
 </div>
+
+## 永远是深夜该多好
+
+<div class="photo-row photo-row--trio">
+
+<img src="../winter/P2-1.jpg" alt="晓峰书屋">
+<img src="../winter/P2-2.jpg" alt="杏花村">
+<img src="../winter/P2-3.jpg" alt="阅见西湖">
+
+</div>
+
+<div class="photo-row">
 
