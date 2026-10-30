@@ -117,6 +117,8 @@
 ## 家乡
 离家最是不舍。
 
+<div class="photo-row">
+
 <img src="../winter/p1.jpg" alt="家乡">
 
 </div>
@@ -136,6 +138,4 @@
 <img src="../winter/P2-3.jpg" alt="阅见西湖">
 
 </div>
-
-<div class="photo-row">
 
