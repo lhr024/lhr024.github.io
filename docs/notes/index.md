@@ -13,3 +13,4 @@
 - [东京爱情故事](dongai.md)
 - [奥德赛](odssye.md) —— 2026.08
 - [攻壳机动队 2026](ghostInTheShell.md) —— 2026.09
+- [四重奏](fourCZ.md) —— 2026.11
