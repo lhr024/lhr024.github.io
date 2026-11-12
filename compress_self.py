@@ -1,7 +1,7 @@
 import os
 from PIL import Image, ImageOps
 
-d = "docs/photos/winter/local"
+d = "docs/"
 for f in sorted(os.listdir(d)):
     p = os.path.join(d, f)
     if not f.lower().endswith((".jpg", ".jpeg", ".png")):

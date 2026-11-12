@@ -106,3 +106,17 @@
 </div>
 
 </figure>
+
+# 2026.11
+第一眼看到就觉得像剑来里走出来的角色。
+</figure>
+
+<figure class="longying-figure">
+
+<div class="longying-cover">
+
+<img src="qiuyuan.png" alt="仇远">
+
+</div>
+
+</figure>
