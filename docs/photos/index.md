@@ -15,3 +15,4 @@
 - [厦门 2026.10](xiamen.md)
 - [冬月清平 2026.11](winter.md)
 - [年年有不同](self.md)
+- [扬州 2026.11](yangzhou.md)
