@@ -1,10 +1,12 @@
 import os
 from PIL import Image, ImageOps
 
-d = "docs/photos/yangzhou"
+d = "docs/photos/winter"
 for f in sorted(os.listdir(d)):
     p = os.path.join(d, f)
     if not f.lower().endswith((".jpg", ".jpeg", ".png")):
+        continue
+    if not f.lower().startswith("p4"):  # only the P4 set
         continue
     before = os.path.getsize(p)
     im = Image.open(p)

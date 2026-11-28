@@ -193,3 +193,19 @@
 <img src="../winter/P3-6.jpg" alt="冬天的脚步">
 
 </div>
+
+## 小满胜万全
+耳机里响起NON的歌曲，听着她开心的怪叫，我不禁嘴角上扬。这么多年过去了，她一直没变，还是那个让身边人露出笑脸的idol。
+
+
+<div class="photo-row photo-row--duo">
+
+<img src="../winter/P4-1.jpg" alt="NON">
+<img src="../winter/P4-2.jpg" alt="NON">
+</div>
+
+<div class="photo-row">
+
+<img src="../winter/P4-3.jpg" alt="NON">
+
+</div>
